@@ -13,11 +13,11 @@ public class ScenarioBase {
             nodes.execute(new Node(fila));
             nodes.execute(new Node(fila)); 
             nodes.execute(new Node(fila)); 
-            task.execute(new TaskProducer(fila));
-            task.execute(new TaskProducer(fila)); 
-            task.execute(new TaskProducer(fila)); 
-            task.execute(new TaskProducer(fila)); 
-            task.execute(new TaskProducer(fila)); 
+            task.execute(new TaskProducer(fila,1));
+            task.execute(new TaskProducer(fila,2)); 
+            task.execute(new TaskProducer(fila,3)); 
+            task.execute(new TaskProducer(fila,4)); 
+            task.execute(new TaskProducer(fila,5)); 
             
         } catch (Exception e) {}
 
