@@ -11,8 +11,9 @@ public class Task {
         try {
             // generating a number between 1000 and 15000
             long execDuration = 1000 + (long) (new Random().nextFloat() * (15000 - 1000));
+            System.out.println(execDuration);
             Thread.sleep(execDuration);
-        } catch (InterruptedException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
